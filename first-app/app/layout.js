@@ -1,10 +1,4 @@
-import Link from 'next/link'
-
-const Links = [
-	{ to: '/', label: 'Home' },
-	{ to: '/About', label: 'About' },
-	{ to: '/Contact', label: 'Contact' }
-]
+import { Header } from "./components/Header/Header"
 export default function RootLayout({ children }) {
 	return (
 		<html>
@@ -13,19 +7,7 @@ export default function RootLayout({ children }) {
 				<title>My First App</title>
 			</head>
 			<body>
-				<header>
-					<nav>
-						<ul>
-							{Links.map(({ to, label }) => (
-								<li key={to}>
-									<Link href={to}>
-										{label}
-									</Link>
-								</li>
-							))}
-						</ul>
-					</nav>
-				</header>
+				<Header />
 				{children}
 			</body>
 		</html>
