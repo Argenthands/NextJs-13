@@ -1,3 +1,4 @@
+import styles from "./NavigationBar.module.css";
 import Link from 'next/link';
 const Links = [
     { to: '/', label: 'Home' },
@@ -6,10 +7,10 @@ const Links = [
 ];
 export function NavigationBar() {
     return (
-        <nav>
-            <ul>
+        <nav className={styles.NavigationBar}>
+            <ul className={styles.NavigationElements}>
                 {Links.map(({ to, label }) => (
-                    <li key={to}>
+                    <li className={styles.NavigationLink} key={to}>
                         <Link href={to}>
                             {label}
                         </Link>

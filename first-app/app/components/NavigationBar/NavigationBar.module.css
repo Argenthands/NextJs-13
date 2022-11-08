@@ -1,0 +1,18 @@
+.NavigationBar{
+    border: 1.5px solid #fff;
+    border-radius: 4px;
+}
+.NavigationElements{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.NavigationLink{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 4px;
+    margin: 4px;
+    border: 1.5px solid #fff;
+    border-radius: 4px;
+}
