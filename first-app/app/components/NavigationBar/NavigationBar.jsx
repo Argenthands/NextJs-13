@@ -4,6 +4,7 @@ const Links = [
     { to: '/', label: 'Home' },
     { to: '/About', label: 'About' },
     { to: '/Contact', label: 'Contact' },
+    { to: '/Services', label: 'Services' },
 ];
 export function NavigationBar() {
     return (

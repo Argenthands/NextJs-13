@@ -125,3 +125,52 @@
                 return <h1>Footer</h1>;
             }
             ```
+11. Dando estilos:
+    1. En caso de no existir, crear el archivo [globals.css](./first-app/styles/globals.css)
+        ```bash
+        touch styles/globals.css
+        ```
+    2. En el archivo [styles/globals.css](./first-app/styles/globals.css) agregar:
+        ```css
+
+        ```
+    3. Agregar en el Layout:
+        ```jsx
+        import "../styles/globals.css";
+        ```
+    4. Estilos de la barra de navegación:
+        - crear el archivo de estilos [NavigationBar.module.css](./first-app/app/components/NavigationBar/NavigationBar.module.css)
+        ```bash
+        touch app/components/NavigationBar/NavigationBar.module.css
+        ```
+        - Colocar los estilos
+        ```css
+        .NavigationBar{
+        border: 1.5px solid #fff;
+        border-radius: 4px;
+        }
+        .NavigationElements{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+        .NavigationLink{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 4px;
+            margin: 4px;
+            border: 1.5px solid #fff;
+            border-radius: 4px;
+        }
+        ```
+        - Importar el archivo de estilos en el componente [NavigationBar/NavigationBar.jsx](./first-app/app/components/NavigationBar/NavigationBar.jsx)
+        ```jsx
+        import styles from "./NavigationBar.module.css";
+        ```
+        - Agregar la clase al componente
+        ```html
+        <nav className={styles.NavigationBar}> </nav>
+        <ul classname={styles.NavigationElements}> </ul>
+        <li classname={styles.NavigationLink}> </li>
+        ```

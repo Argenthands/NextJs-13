@@ -1,6 +1,6 @@
-
-export default function contacPage() {
+import style from "./ContactPage.module.css";
+export default function ContactPage() {
     return (
-        <div>contac</div>
+        <div className={style.ContactPage}>Contac</div>
     )
 }
