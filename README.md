@@ -174,3 +174,6 @@
         <ul classname={styles.NavigationElements}> </ul>
         <li classname={styles.NavigationLink}> </li>
         ```
+### Notas y referencias:
+- [MIdudev](https://www.youtube.com/watch?v=tA-_vAz9y78&ab_channel=midulive)
+- [HTML Symbols](https://www.htmlsymbols.xyz/)
