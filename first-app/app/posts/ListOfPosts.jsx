@@ -1,4 +1,5 @@
 import { LikeButton } from "./LikeButton";
+import { Show } from "./Show";
 import Link from "next/link";
 
 const url = "https://jsonplaceholder.typicode.com/posts"
@@ -27,8 +28,9 @@ export async function ListOfPosts() {
             <Link href='/posts/[id]' as={`/posts/${post.id}`}>
                 <h2>{post.title}</h2>
                 <p>{post.body}</p>
-                <LikeButton id={post.id}/>
             </Link>
+                <Show id={post.id} title={post.title} body={post.body}/>
+                <LikeButton id={post.id}/>
         </article>
     ))
 }
